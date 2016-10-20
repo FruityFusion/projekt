@@ -11,7 +11,7 @@
 	
 	$handle = fopen("kosten.csv","w+");
 	$data = '"Fläche je Stockwerk in QM";"Anzahl der Stockwerke";"Baujahr";'."\n";
-	$data .= '"'. $_GET['fst'] . '";' . $_GET['sth'] . '";' . $_GET['ast'] . '";' . $_GET['baujahr'] . '";' .  "\n";
+	$data .= '"'. $_GET['fst'] . '";"' . $_GET['sth'] . '";"' . $_GET['ast'] . '";"' . $_GET['baujahr'] . '";' .  "\n";
 	fwrite($handle,$data);
 	fclose($handle);
 	
