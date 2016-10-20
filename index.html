@@ -10,39 +10,62 @@
 	<body style="background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<div class="center-block">
-			<div class="row">
-			  <div class="col-xs-6">
-			<div class="panel panel-primary">
-			  <div class="panel-body">
-					Kostenabsch&aumltzung
-				  </div>
-				  <div class="panel-footer">Super tolle seite die sachen macht.</div>
+		<form method="GET" action="kosten.php">
+			<div class="center-block">
+				<div class="row">
+				  <div class="col-xs-6">
+				<div class="panel panel-primary">
+				  <div class="panel-body">
+						Kostenabsch&aumltzung
+					  </div>
+					  <div class="panel-footer">Super tolle seite die sachen macht.</div>
+						</div>
+							<br/>
+						<div class="input-group input-group-lg">
+						  <span class="input-group-addon" id="QM">Fl&auml;che je Stockwerk in QM</span>
+						  <input type="text" class="form-control" placeholder="" aria-describedby="QM">
+						</div>
+							<br/>
+						<div class="input-group input-group-lg">
+						  <span class="input-group-addon" id="M">Stockwerksh&ouml;he in M</span>
+						  <input type="text" class="form-control" placeholder="" aria-describedby="M">
+						</div>
+							<br/>
+						<div class="input-group input-group-lg">
+						  <span class="input-group-addon" id="stock">Anzahl Stockwerke</span>
+						  <input type="text" class="form-control" placeholder="" aria-describedby="stock">
+						</div>
+							<br/>
+							<hr/>
+							<div class="radio">
+							  <label>
+								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+									Vor 1950
+								</input>
+									<br/>
+								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+									Vor 1977
+								</input>
+										<br/>
+								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+									Vor 1987
+								</input>
+										<br/>
+								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+									Vor 1998
+								</input>
+							  </label>
+							</div>
+							
+						<center>
+							<button type="submit" class="btn btn-default">Schei&szlig;e</button>
+						</center>
 					</div>
-						<br/>
-					<div class="input-group input-group-lg">
-					  <span class="input-group-addon" id="QM">Fl&auml;che je Stockwerk in QM</span>
-					  <input type="text" class="form-control" placeholder="" aria-describedby="QM">
+					<div class="col-xs-6">
 					</div>
-						<br/>
-					<div class="input-group input-group-lg">
-					  <span class="input-group-addon" id="M">Stockwerksh&ouml;he in M</span>
-					  <input type="text" class="form-control" placeholder="" aria-describedby="M">
-					</div>
-						<br/>
-					<div class="input-group input-group-lg">
-					  <span class="input-group-addon" id="stock">Anzahl Stockwerke</span>
-					  <input type="text" class="form-control" placeholder="" aria-describedby="stock">
-					</div>
-						<br/>
-					<center>
-						<button type="button" class="btn btn-default">Schei&szlig;e</button>
-					</center>
-				</div>
-				<div class="col-xs-6">
 				</div>
 			</div>
-		</div>
+		</form>
 	
 	</body>
 	
